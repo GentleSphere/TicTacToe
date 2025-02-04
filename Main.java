@@ -11,23 +11,31 @@ public class Main {
     
     public static void main(String[] args){
         int turn = 1;//Determines whose turn it is
-        int move;//current move of the players
         printBoard();
         return;
     }
 
     //Receives and displays the move by the player
     private void play(){
+        while(Status == CONTINUE){
         Scanner move = new Scanner(System.in);
         //Player one's turn
-        if(turn == 1){
+        if(turn  % 2 == 0){ //if it is even then player ones turn.
             System.out.println("Player 1: Please make a move:");
-            move = move.nextLine();
+        int input1 = move.nextLine();
+            int input2 = move.nextLine();
+            board[input1]
+            turn++;
 
+            
         }
         //Player two's turn
         else{
             System.out.println("Player 2: Please make a move");
+            input = move.nextLine();
+            input2 = move.nextLine();
+            turn++;
+        }
         }
 
 
@@ -41,7 +49,7 @@ public class Main {
     //Prints the current board
     private static void printBoard(){
         //Use if statement later to show what is in the middle of each square
-        int[] board = {0,0,0,0,0,0,0,0,0}; //Determines which player took which square
+        int[3][3] board = {{0,0,0},{0,0,0}}; //Determines which player took which square
         
         System.out.println(" _______________________ ");
         System.out.println("|       |       |       |");
