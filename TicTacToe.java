@@ -87,13 +87,6 @@ public class TicTacToe {
     }
 
     /*
-     * @brief prints the current game board 
-     */
-    private void print_board(){
-        //TODO
-    }
-
-    /*
      * @brief determines what symbol to place and where
      * @param column: column of the 2d array to print in
      * @param value: X or O to put in the array
