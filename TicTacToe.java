@@ -91,8 +91,65 @@ public class TicTacToe {
      * @param column: column of the 2d array to print in
      * @param value: X or O to put in the array
      */
+    private void print_board(){
+        System.out.println(" _______________________ ");
+        System.out.println("|       |       |       |");
+        print_symbol(0, board[0][0]);
+        print_symbol(1, board[0][1]);
+        print_symbol(2, board[0][2]);
+        System.out.println("|_______|_______|_______|");
+        System.out.println("|       |       |       |");
+        print_symbol(0, board[1][0]);
+        print_symbol(1, board[1][1]);
+        print_symbol(2, board[1][2]);
+        System.out.println("|_______|_______|_______|");
+        System.out.println("|       |       |       |");
+        print_symbol(0, board[2][0]);
+        print_symbol(1, board[2][1]);
+        print_symbol(2, board[2][2]);
+        System.out.println("|_______|_______|_______|");
+
+    }
+
+    /*
+     * @brief determines what symbol to place and where
+     * @param column: column of the 2d array to print in
+     * @param value: X or O to put in the array
+     */
     private void print_symbol(int column, char value){
-        //TODO
+        if(column == 0){
+            if(value = 'X'){
+                System.out.print("|   X   |");
+            }
+            else if(value = 'O'){
+                System.out.print("|   O   |");
+            }
+            else{
+                System.out.print("|       |");
+            }
+        }
+        else if(column == 1){
+            if(value = 'X'){
+                System.out.print("   X   |");
+            }
+            else if(value = 'O'){
+                System.out.print("   O   |");
+            }
+            else{
+                System.out.print("       |");
+            }
+        }
+        else{
+            if(value = 'X'){
+                System.out.println("   X   |");
+            }
+            else if(value = 'O'){
+                System.out.println("   O   |");
+            }
+            else{
+                System.out.println("       |");
+            }
+        }
     }
 
     /*
