@@ -123,10 +123,10 @@ public class TicTacToe {
      */
     private void print_symbol(int column, char value){
         if(column == 0){
-            if(value = 'X'){
+            if(value == 'X'){
                 System.out.print("|   X   |");
             }
-            else if(value = 'O'){
+            else if(value == 'O'){
                 System.out.print("|   O   |");
             }
             else{
@@ -134,10 +134,10 @@ public class TicTacToe {
             }
         }
         else if(column == 1){
-            if(value = 'X'){
+            if(value == 'X'){
                 System.out.print("   X   |");
             }
-            else if(value = 'O'){
+            else if(value == 'O'){
                 System.out.print("   O   |");
             }
             else{
@@ -145,10 +145,10 @@ public class TicTacToe {
             }
         }
         else{
-            if(value = 'X'){
+            if(value == 'X'){
                 System.out.println("   X   |");
             }
-            else if(value = 'O'){
+            else if(value == 'O'){
                 System.out.println("   O   |");
             }
             else{
