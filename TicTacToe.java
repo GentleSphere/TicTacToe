@@ -42,7 +42,12 @@ public class TicTacToe {
             int col = input.nextInt();
 
             if(valid_move(row, col)){
-                print_symbol(col, first_player ? 'X' : 'O');
+                  if(first_player == true){
+                    board[row][col] = 'X';
+                }
+                else{
+                    board[row][col] = 'O';
+                } 
                 first_player = !first_player; //change whose turn it is
                 game_status(); //check for win or end after each players turn
             } else {
