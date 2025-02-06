@@ -116,6 +116,33 @@ public class TicTacToe {
      */
     private boolean check_winner(){
         //TODO
+        
+
+
+        for(int i = 0; i < BOARDSIZE; i++){
+            
+
+            if(board[i][0] == board[i][1] && board[i][0] == board[i][2]){
+                return true;
+            }
+
+        }
+
+        for(int j = 0; j < BOARDSIZE; j++){
+            if(board[0][j] == board[1][j] && board[2][j] == board[0][j]){
+                return true;
+            }
+        }
+
+        if(board[0][0] == board[1][1] && board[0][0] == board[2][2]){
+            return true;
+        }
+        if(board[0][2] == board[1][1] && board[0][0] == board[2][0]){
+            return true;
+        }
+
+        else return false;
+    
     }
 
     /*
