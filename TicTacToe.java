@@ -63,7 +63,14 @@ public class TicTacToe {
      * @param player: player whose turn it is
      */
     private void print_status(int player){
-        //TODO
+                if(first_player = true){
+            System.out.println("PLayers 1 turn: ");
+
+        }
+        else{
+            System.out.println("PLayers 2 turn: ");
+        }
+    }
     }
 
     /*
