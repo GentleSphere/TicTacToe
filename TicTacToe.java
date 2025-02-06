@@ -70,7 +70,13 @@ public class TicTacToe {
      * @Brief checks on the status of the game
      */
     private void game_status(){
-        //TODO
+        if(check_winner()){
+            status = Status.WIN;
+            game_over = true;
+        } else if(check_draw()){
+            status = Status.DRAW;
+            game_over = true;
+        }
     }
 
     /*
