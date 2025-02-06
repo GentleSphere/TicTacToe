@@ -122,7 +122,14 @@ public class TicTacToe {
      * @brief Check if the game is a draw
      */
     private boolean check_draw(){
-    //TODO
+    for(int i = 0; i < BOARDSIZE; i++){
+        for(int j = 0; j < BOARDSIZE; j++){
+            if(board[i][j] == ' '){
+                return false;
+            }
+        }
+      }
+        return true;
     }
 
     public static void main(String[] args) {
